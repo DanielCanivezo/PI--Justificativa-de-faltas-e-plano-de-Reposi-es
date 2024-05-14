@@ -1,1 +1,1 @@
-Repositorio para armanezar todo repositorio do curso da dio.
+Repositorio para armanezar todo repositorio do Projeto de P.I.
