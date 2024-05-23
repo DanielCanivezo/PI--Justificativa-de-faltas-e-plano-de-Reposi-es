@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justificativa de Faltas</title>
+</head>
+<body>
+    <div id="cabecalho">
+        <img sr="" id="logoCPS"> <img src="" id="logoFatec">
+        <h3 id="texto_topo">Justificativa de Faltas - Fatec "Ogari de Castro Pacheco - Itapira"</h3>
+    </div>
+    
+    <div id="div1" class="div1"> 
+      
+            <label for="nome" class="nome"> Nome:</label>
+            <input type="text" name="nome" id="nomeCampo">
+
+        
+            <label for="matricula" class="matricula">Matrícula:</label>
+            <input type="number" name="matricula" id="matriculaCampo" size="80">
+        
+            <label for="funcao" class="funcaoProf">Cursos:</label>
+            <input type="checkbox" id ="checkboxDSM" value="DSM">DSM
+            <input type="checkbox" id ="checkboxGE" value="GE">GE
+            <input type="checkbox" id ="checkboxGTI" value="GTI">GTI
+            <input type="checkbox" id ="checkboxGPI" value="GPI">GPI
+            <input type="checkbox" id ="checkboxHAE" value="GPI">HAE
+            <br>
+
+            <h5 class="funcProf">Função:Professor de Ensino Superior - Regime Jurídico: CLT</h5>
+            <br>
+
+            <label for="periodo de faltas" class="falta_periodo">Período de Faltas:</label>
+            <input type="number" name="periodo de faltas" id="falta_periodoCampo" placeholder="dias">
+
+            <label for="data inicial" class="data_in">Data Inicial:</label>
+            <input type="date" name="data inicial" id="data_inCampo">
+
+            <label for="data final" class="data_f">Data Final:</label>
+            <input type="date" name="data final" id="data_fCampo">
+    </div>
+    <br><br>
+
+    <div id="div2">
+        <form method="post" action="">
+            <input type="radio" name="opt1" id="opt1">
+            <label for="licenca e falta medica" class="licenca_faltamedica">Licença e Falta Médica: </label>
+            <select name="licenca e falta medica" id="licenca_faltamedicaCampo">
+
+                <option value=med01d">Falta Médica (Atestado Médico de 1 dia)</option> 
+                <option value="comp_med">Comparecimento ao Médico</option>
+                <option value="lic_saude2d">Licença-Saúde (Atestado Médico igual ou superior a 2 dias)</option>
+                <option value="lic_materna5d">Licença-Maternidade (Atestado Médico até 5 dias)</option>
+             
+            </select><br>
+                
+            <input type="radio" name="opt2" id="opt2">
+            <label for="falta injustificada" class="falta_injust">Falta Injustificada: </label>
+            <select name="falta_injustificada" id="falta_injustCampo">
+             
+                <option value="Falta">Falta</option>
+                <option value="atraso_saidaant">Atraso ou Saída Antecipada</option>
+            </select> <br>
+             
+            <input type="radio" name="opt3" id="opt3">
+            <label for="faltas justificadas" class = "faltas_just">Faltas Justificadas:</label>
+            <select name="faltas_justificadas" id="faltas_justCampo">
+             
+                <option value="Motivo da Falta">Motivo da Falta</option>
+                <option value="Motivo do Atraso ou Saída Antecipada">Motivo do Atraso ou Saída Antecipada</option>
+             
+            </select><br>
+            
+            <input type="radio" name="opt4" id="opt4">
+            <label for="faltas previstas na legislação trabalhista">Faltas Previstas na Legislação Trabalhista:</label>
+            <select name="faltas_legislacao" id="faltas_lista">
+                <option value="Falecimento de cônjuge,pai,mãe,filho">Falecimento de cônjuge, pai, mãe, filho (9 dias consecutivos).</option>
+                <option value=" Falecimento ascendente, descendente ou outro"> Falecimento ascendente (exceto pai e mãe), descendente (exceto filho), irmão ou pessoa declarada na CTPS, que viva sob sua 
+                    dependência econômica (2 dias consecutivos).</option>
+                <option value="casamento">Casamento (9 dias consecutivos).</option>
+                <option value="nasc_filho"> Nascimento de filho, no decorrer da primeira semana (5 dias).</option>
+                <option value="acp_gravidez">Acompanhar esposa ou companheira no período de gravidez, em consultas médicas e exames complementares (até 2 dias).</option>
+                <option value="acp_filho6a">Acompanhar filho de até 6 anos em consulta médica (1 dia por ano).</option>
+                <option value="doacao_sangue"> Doação voluntária de sangue (1 dia em cada 12 meses de trabalho).</option>
+                <option value="alistamento_eleitor">Alistamento como eleitor (até 2 dias consecutivos ou não).</option>
+                <option value="depoimento_judicial">Convocação para depoimento judicial</option>
+                <option value="jurado">Comparecimento como jurado no Tribunal do Júri</option>
+                <option value="servico_eleitoral">Convocação para serviço eleitoral</option>
+                <option value="mesas_eleitoral">Dispensa dos dias devido à nomeação para compor as mesas receptoras ou juntas eleitorais nas eleições ou requisitado para 
+                    auxiliar seus trabalhos (Lei nº 9.504/97)</option>
+                <option value="vestibular">Realização de Prova de Vestibular para ingresso em estabelecimento de ensino superior</option>
+                <option value="comp_justicatrab">Comparecimento necessário como parte na Justiça do Trabalho (Enunciado TST nº 155) (Horas necessárias)</option>
+                <option value="acidente_transporte">Atrasos decorrentes de acidentes de transporte, com atestado da empresa concessionária(Horas necessárias)</option>
+                          
+            </select>    
+            <label for="comentario" class="coment">Comente aqui de acordo com a opção de justificativa selecionada.</label>
+            <textarea id="comentCampo" name="comentario" placeholder="Comentário para a justificativa." cols="30" rows="5" wrap="hard"></textarea>
+            <br>
+
+            <input type="file" id="upload" value ="Upload">
+            <input type="submit" id="visualizar" value="Visualizar Documento">
+            <input type="submit" id ="proxpag" value="Reposição de Faltas">
+
+        </form>
+    </div>
+    
+</body>
+</html>
