@@ -1,0 +1,359 @@
+/* ---------------   || FERRAMENTA VISUAL PARA DESENVOLVIMENTO || ---------------  */
+
+/* body              {border-style: solid; border-width: 1px; border-color: red;} */
+/* .FLEXBOX-01       {border-style: solid; border-width: 1px; border-color: red;} */
+
+/* #DIVISAO-SUPERIOR {border-style: solid; border-width: 1px; border-color: red;} */
+/* .FLEXBOX-02       {border-style: solid; border-width: 1px; border-color: red;} */
+/* #Tabela-01        {border-style: solid; border-width: 1px; border-color: red;} */
+/* #Tabela-02        {border-style: solid; border-width: 1px; border-color: red;} */
+
+
+
+/* #DIVISAO-INFERIOR    {border-style: solid; border-width: 1px; border-color: red;} */
+/* .FLEXBOX-03          {border-style: solid; border-width: 1px; border-color: red;} */
+/* #Tabela-02           {border-style: solid; border-width: 1px; border-color: red;} */
+
+
+
+/* ---------------   || FERRAMENTA VISUAL PARA DESENVOLVIMENTO || ---------------  */
+
+header 
+    {
+      padding: 10px;
+      background-color: white(240, 240, 240);
+      border: 1px solid rgb(236, 236, 236);
+      border-radius: 10px;
+
+      align-content: safe;
+    }
+
+.HEADER-FLEXBOX
+    {
+      display: flex;                           /* Transforma a ||DIV HEADER-FLEXBOX|| em uma flexbox - TODAS AS FLEXBOX PRECISAM DESSA PROPRIEDADE */
+      flex-direction: row;                    /* Define como os itens filhos se posicionam dentro da flexbox || Row (padrao) = Linha [EIXO X] Column = colunas [EIXO Y] || */
+      flex-wrap: wrap;                       /* Permite ou nao a quebra de linha dos elementos filhos || nowrap (padrao) = NAO PERMITE ; WRAP = PERMITE || */
+      justify-content: space-between;       /* Distribuicao dos itens filhos no eixo X dentro da flexbox */
+      align-items: center;                 /* Distribuicao dos itens filhos no eixo Y dentro da flexbox */  
+      
+      padding: 10px;                      /* Margem interna || Evita que os itens fiquem enconstados nas bordas || */ 
+
+      align-content: safe;
+    }
+
+#texto-header {text-align:center; justify-content: safe;}
+
+#logotipo-FATEC {height: 100px; justify-content: safe;}
+
+.txt-header-01 
+    {
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 20px;
+
+     align-content: safe;
+     }
+
+.txt-header-02 
+    {
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 15px;
+     font-style: italic;
+     color: #8B8B8B;
+
+     align-content: safe;
+    }
+
+    /* FINAL CSS HEADER || ESTRUTURAL E VISUAL || */
+
+    /* INICIO DO CSS CORPO HTML || ESTRUTURAL E VISUAL || */
+
+body 
+     {
+      margin-left: 50px; margin-right: 50px;
+      min-height: 100vh;
+      background-color: white;
+      padding: 15px;
+     }
+
+#DIVISAO-SUPERIOR-VISUAL
+    {
+     box-sizing: border-box;
+     background: #FFFFFF;
+     border: 1px solid rgb(236, 236, 236);
+     border-radius: 10px;
+     align-content: safe;
+     padding: 10px;
+    }
+
+.FLEXBOX-01 
+    {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 10px;
+     height: 100px;
+    }
+
+#DIVISAO-SUPERIOR
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 10px;
+
+      align-content: safe;
+    }
+    
+.FLEXBOX-02 
+    {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      flex-wrap: wrap;
+
+      align-content: safe;
+    }
+
+#Tabela-01 /* GERAL */
+    {
+      border: #8B8B8B;
+      border-style: solid;
+      border-width: 0.5px;
+      border-collapse: collapse;
+      padding: 3px;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+    }
+
+#Tabela-01 td /* COLUNAS */
+    {
+      border: #cccccc;
+      border-style: solid;
+      border-width: 0.5px;
+      width: 150px;
+    }
+
+#Tabela-01 th /* LINHAS */
+    {
+      border: #8B8B8B;
+      border-style: solid;
+      border-width: 0.5px;
+    }
+
+#Tabela-02 /* GERAL */
+    {
+      border: black;
+      border-style: solid;
+      border-width: 0.5px;
+      border-collapse: collapse;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+    }
+
+#Tabela-02 td /* COLUNAS */
+    {
+      border: #cccccc;
+      border-style: solid;
+      border-width: 0.5px;
+      width: 150px;
+    }
+
+#Tabela-02 th /* LINHAS */
+    {
+      border: black;
+      border-style: solid;
+      border-width: 0.5px;
+      
+    }
+    
+
+#DIVISAO-INFERIOR
+    {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+
+     box-sizing: border-box;
+     background: #FFFFFF;
+     border: 1px solid rgb(236, 236, 236);
+     border-radius: 10px;
+     align-content: safe;
+    }
+
+.FLEXBOX-03
+    {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 10px;
+      flex-direction: column;
+      
+    }
+.FLEXBOX-03B 
+{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1;
+  flex-wrap: wrap; /*tentando deixar a permissão de quebra - no meu note não deu para reduzir mais ao ponto de ver*/
+  flex-grow: 2;
+  align-content: safe;
+}
+
+#Tabela-03 /* GERAL */
+    {
+      border: black;
+      border-style: solid;
+      border-width: 0.5px;
+      border-collapse: collapse;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+    }
+
+#Tabela-03 td /* COLUNAS */
+    {
+      border: #cccccc;
+      border-style: solid;
+      border-width: 0.5px;
+      width: 200px;
+    }
+
+#Tabela-03 th /* LINHAS */
+    {
+      border: black;
+      border-style: solid;
+      border-width: 0.5px;
+      
+    }
+
+.texto 
+    {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+    }
+
+.datebox 
+    {
+     box-sizing: border-box;
+     border: 1px solid #D9D9D9;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     border-radius: 5px;
+     width: 140px;
+     font-size: 15px;
+    }
+
+.timebox 
+    {
+     box-sizing: border-box;
+     border: 1px solid #D9D9D9;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     border-radius: 5px;
+     width: 140px;
+     font-size: 15px;
+    }
+
+.selectbox 
+    {
+     box-sizing: border-box;
+     border: 1px solid #D9D9D9;
+     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+     border-radius: 5px;
+     width: 196px;
+     font-size: 15px;
+    }
+
+.selectbox-02
+{
+ box-sizing: border-box;
+ border: 1px solid #D9D9D9;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ border-radius: 5px;
+ width: 140px;
+ font-size: 15px;
+}
+
+
+.item-3 [type="submit"]
+  {
+  display: none;
+  }
+
+.item-3
+{
+  grid-column-start: 10;
+  grid-column-end: 10;
+  align-self: flex-end;
+
+}
+.item-3 label
+{ /*BOTÃO SALVAR*/
+  justify-self:end;
+  padding: 10px 5px;
+  background-color: #872525;
+  color: #FFFFFF;
+  display: block;
+  border-radius: 10px;
+  width: 150px;
+  height: auto;
+  text-align: center;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .item-3:active /*BOTÃO*/
+  {
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 5px 3px 8px rgba(94, 94, 94, 0.5);
+  }
+
+  #titulo_tabela /*usando id dos TR da tabela para colorir a linha que está o título*/
+  {
+    background-color: #701c1c;
+      color: #FFFFFF;
+      
+  }
+
+ #cabecalho_tabela /*usando mesmo id  para TR e TD da tabela para colorir a linha e a coluna desejada*/
+ {
+    background-color: #872525;
+    color: #FFFFFF;
+  }
+
+  .item-2 [type="submit"]
+  {
+  display: none;
+  }
+
+.item-2
+{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  align-self: flex-end;
+
+}
+.item-2 label
+{ /*BOTÃO VOLTAR*/
+  justify-self:end;
+  padding: 10px 5px;
+  background-color: #872525;
+  color: #FFFFFF;
+  display: block;
+  border-radius: 10px;
+  width: 150px;
+  height: auto;
+  text-align: center;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+.item-2:active /*BOTÃO*/
+  {
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 5px 3px 8px rgba(94, 94, 94, 0.5);
+  }
