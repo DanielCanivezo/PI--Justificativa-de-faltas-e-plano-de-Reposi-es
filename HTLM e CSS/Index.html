@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linkando o arquivo CSS ao arquivo HTML-->
+    <link rel="stylesheet" href="Professor_CSS.css">
+
+    <title> Página Principal </title>
+</head>
+<body>
+
+    <!-- || INICIO CABECALHO || -->
+    <header> 
+
+        <!-- || INICIO FLEXBOX 01 || -->
+        <div class="HEADER-FLEXBOX"> 
+            
+            <div> 
+                <figure> <img src="Img/Logo_Fatec_CPS.png" alt="Logotipo FATEC-CPS" id="logotipo-FATEC"> </figure>
+            </div>
+            
+            <div id="texto-header">
+                <strong>
+                    <p class="txt-header-01"> PORTAL JUSTIFICATIVA </p>
+                    <p class="txt-header-01"> DE FALTAS </p> 
+                </strong>
+                    <p class="txt-header-02"> Fatec Itapira </p>
+            </div>
+            
+        </div>
+        <!-- || FINAL FLEXBOX 01 ||-->
+            
+    </header>
+    <!-- || FINAL CABECALHO || --> 
+
+    <br> <!-- || QUEBRA DE LINHA || -->
+
+<div id="DIVISAO-SUPERIOR-VISUAL">
+<div id="DIVISAO-SUPERIOR">
+    <div id="FLEXBOX-01">
+        <p>Bem-vindo(a) ANA CELIA RIBEIRO BIZIGATO PORTES</p>
+    </div>
+    <div id="FLEXBOX-01A">
+        
+        
+            <label for="botao_novaSolicitacao">Nova solicitação</label>
+            <a href="Justificativa_faltas.html"><input type="submit" id="botao_novaSolicitacao" value=""></a>
+        
+
+        <label for="botao_sair">Sair</label>
+        <input type="submit" id="botao_sair" value="">
+         <!--|| Pode ser um link ou um botao para voltar a pagina inicial || -->
+
+    
+
+    </div>
+
+    <div id="div-meio">
+        <div id="">
+ 
+        </div>
+        <table id="Tabela-01">
+        
+            <tr id="Titulo-Tabela">
+                <td> Curso       </td>
+                <td> Disciplina  </td>
+                <td> Status      </td>
+                <td> Data de Solicitação </td>
+                <td> Comentário do Coordenador  </td>
+                <td>Alteração</td>
+            </tr>
+
+            <tr class="linha-colorida">
+                <td> DSM  </td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td> Engenharia de Software I </td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>Análise - Coordenador</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>15/06/2024</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>-</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td class="no_edit">Sem permissão</td>                      
+            </tr>
+
+            <tr >
+                <td> GTI  </td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>Tópicos Avançados em Tecnologia da Informação </td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>Reprovado</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>30/05/2024</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>Anexe documento comprobatório.</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td class="editar"><label for="editar">Editar</label> <input type="submit" id="editar" value="Editar"></td>
+            </tr>
+
+            <tr class="linha-colorida">
+                <td> DSM  </td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td> Engenharia de Software I </td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>Aprovado</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>25/05/2024</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>-</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td class="no_edit">Sem permissão</td>                     
+            </tr>
+
+            <tr>
+                <td> DSM  </td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td> Engenharia de Software II </td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>Aguardando finalização</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>16/04/2024</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>-</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td class="no_edit">Sem permissão</td>
+            </tr>
+
+            <tr class="linha-colorida">
+                <td> DSM  </td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td> Engenharia de Software II </td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>Finalizado</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>14/11/2023</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>-</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td class="no_edit">Sem permissão</td>
+            </tr>
+
+            <tr>
+                <td> DSM  </td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td> Engenharia de Software I</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>Finalizado</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>11/11/2023</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>-</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td class="no_edit">Sem permissão</td>
+            </tr>
+
+            <tr class="linha-colorida">
+                <td> GTI  </td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>Tópicos Avançados em Tecnologia da Informação </td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>Finalizado</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>09/11/2023</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td>-</td> <!-- || Dado disponivel no Banco de Dados || -->
+                <td class="no_edit">Sem permissão</td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+<div id="FLEXBOX-02">
+    <label for="proxima_pag">Visualizar mais</label>
+    <input type="submit" id ="proxima_pag" value="">
+
+</div>
+
+</div>
+
+</body>
+</html>
